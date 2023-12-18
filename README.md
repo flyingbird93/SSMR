@@ -19,16 +19,16 @@ Python3, requirements.txt
 ### Training and Test
 #### Training
 - stage 1 Create Retrieval Index
-     python image_adaptive_lut_train_paired_with_cross_attention.py
+     python index/create_semantic_style_feature_similar_refer_index.py
 
 - stage 2 Extract SwinTransformer feature
-     python image_adaptive_lut_train_paired_with_cross_attention.py
+     python index/full_size_feature_extract.py
 
 - stage 3 Training GCN model
-     python image_adaptive_lut_train_paired_with_cross_attention.py
+     python SSMR_AIAA.py --train True
 
 ### Evaluation
-     python image_adaptive_lut_train_paired_with_cross_attention.py
+     python SSMR_AIAA.py --train False --test True
      
 we provide the best model of BAID dataset.
 [pretrain model]()密码1024
