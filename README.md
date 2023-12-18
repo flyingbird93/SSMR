@@ -16,15 +16,22 @@ Artistic Image Aesthetic Assessment (AIAA) is an emerging paradigm that predicts
 ### Requirements
 Python3, requirements.txt
 
-### Training
-#### paired training
-     python3 image_adaptive_lut_train_paired_with_cross_attention.py
+### Training and Test
+#### Training
+- stage 1 Create Retrieval Index
+     python image_adaptive_lut_train_paired_with_cross_attention.py
+
+- stage 2 Extract SwinTransformer feature
+     python image_adaptive_lut_train_paired_with_cross_attention.py
+
+- stage 3 Training GCN model
+     python image_adaptive_lut_train_paired_with_cross_attention.py
 
 ### Evaluation
-     python3 image_adaptive_lut_train_paired_with_cross_attention.py
+     python image_adaptive_lut_train_paired_with_cross_attention.py
      
-we provide the best model of MIT FIVEK dataset.
-[pretrain model](https://pan.baidu.com/s/1_cChj5afS0pxb39cCacEGA)密码1024
+we provide the best model of BAID dataset.
+[pretrain model]()密码1024
 
 
 
