@@ -34,7 +34,7 @@ python SSMR_AIAA.py --train True
      python SSMR_AIAA.py --train False --test True
      
 we provide the best model of BAID dataset.
-[pretrain model]()密码1024
+[pretrain model](https://pan.baidu.com/s/1UJXOp8O9R24lfSed8vAyhw)密码1024
 
 
 
