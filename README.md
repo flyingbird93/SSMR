@@ -19,12 +19,15 @@ Python3, requirements.txt
 ### Training and Test
 #### Training
 - stage 1 Create Retrieval Index
+
      python index/create_semantic_style_feature_similar_refer_index.py
 
 - stage 2 Extract SwinTransformer feature
+
      python index/full_size_feature_extract.py
 
 - stage 3 Training GCN model
+
      python SSMR_AIAA.py --train True
 
 ### Evaluation
