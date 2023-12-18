@@ -16,59 +16,25 @@ Artistic Image Aesthetic Assessment (AIAA) is an emerging paradigm that predicts
 ### Requirements
 Python3, requirements.txt
 
-### Build
-For pytorch 1.x:
-
-    cd trilinear_cpp
-    sh setup.sh
-
-Please also replace the following lines:
-```
-# in image_adaptive_lut_train_paired.py, image_adaptive_lut_evaluation.py, demo_eval.py, and image_adaptive_lut_train_unpaired.py
-from models import * --> from models_x import *
-# in demo_eval.py
-result = trilinear_(LUT, img) --> _, result = trilinear_(LUT, img)
-# in image_adaptive_lut_train_paired.py and image_adaptive_lut_evaluation.py
-combine_A = trilinear_(LUT,img) --> _, combine_A = trilinear_(LUT,img)
-```
-
 ### Training
 #### paired training
      python3 image_adaptive_lut_train_paired_with_cross_attention.py
 
 ### Evaluation
-we provide the best model of MIT FIVEK dataset.[pretrain model](https://pan.baidu.com/s/1_cChj5afS0pxb39cCacEGA)密码1024
+     python3 image_adaptive_lut_train_paired_with_cross_attention.py
+     
+we provide the best model of MIT FIVEK dataset.
+[pretrain model](https://pan.baidu.com/s/1_cChj5afS0pxb39cCacEGA)密码1024
 
-1. use python to generate and save the test images:
-
-       python3 image_adaptive_lut_evaluation_with_cross_attention.py
-
-speed can also be tested in above code.
-
-2. use matlab to calculate the indexes used in our paper:
-
-       average_psnr_ssim.m
-
-
-### Tools
-You can generate identity 3DLUT with arbitrary dimension by using `utils/generate_identity_3DLUT.py` as follows:
-
-```
-# you can replace 36 with any number you want
-python3 utils/generate_identity_3DLUT.py -d 36
-```
 
 
 ## Citation
 ```
-@inproceedings{shirgb,
-  title={RGB and LUT based Cross Attention Network for Image Enhancement},
-  author={Shi, Tengfei and Chen, Chenglizhao and He, Yuanbo and Hao, Aimin},
-  booktitle={34rd British Machine Vision Conference 2023, BMVC 2023, Aberdeen, UK, November 20-24},
-  year={2023},
+@article{shisemantic,
+  title={Semantic and Style Based Multiple Reference Learning for Artistic Image Aesthetic Assessment},
+  author={Shi, Tengfei and Li, Xuan and Hao, Aimin and others},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications}
 }
 
 ```
 
-## Reference
-Thanks for the code: [3D LUT](https://github.com/HuiZeng/Image-Adaptive-3DLUT)
