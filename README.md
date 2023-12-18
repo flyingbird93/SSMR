@@ -40,7 +40,7 @@ we provide the best model of BAID dataset.
 @article{shisemantic,
   title={Semantic and Style Based Multiple Reference Learning for Artistic Image Aesthetic Assessment},
   author={Shi, Tengfei and Li, Xuan and Hao, Aimin and others},
-  journal={ACM Transactions on Multimedia Computing, Communications, and Applications}
+  journal={NeuroComputing}
 }
 
 ```
